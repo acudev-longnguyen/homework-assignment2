@@ -12,7 +12,7 @@ let app = {};
 app.init = () => {
 
 	// Start the server
-	server.run();
+  server.run();
 
   // init worker
   workers.init();

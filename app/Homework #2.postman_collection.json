@@ -1,0 +1,558 @@
+{
+	"info": {
+		"_postman_id": "263438f4-6450-4118-82d9-a41db06e629b",
+		"name": "Homework #2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Hello",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer aem51l7b0r9ga7lq2co2"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"long@socitech.co\",\n\t\"firstName\" : \"Justin\",\n\t\"lastName\" : \"Nguyen\",\n\t\"password\" : \"qwer1234\",\n\t\"address\" : \"test address 1\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/hello?name=Justin",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"hello"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Justin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PIng",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "test",
+						"value": "bar"
+					},
+					{
+						"key": "myvar",
+						"value": "true"
+					},
+					{
+						"key": "red",
+						"value": "blue"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\" : \"1234567890\",\n\t\"password\" : \"qwer1234\"\t\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/ping",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer muku66ydwg6rgn107knq"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"test4@socitech.co\",\n\t\"firstName\" : \"T\",\n\t\"lastName\" : \"D\",\n\t\"password\" : \"qwer1234\",\n\t\"address\" : \"test address\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				},
+				"description": "register user"
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Info",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer b9e2tqm06p9u91oxhqw1"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/users?email=test2@socitech.co",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "test2@socitech.co"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User Profile",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer b9e2tqm06p9u91oxhqw1"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"test2@socitech.co\",\n\t\"firstName\" : \"J\",\n\t\"lastName\" : \"NNNNNNN\",\n\t\"password\" : \"qwer1234\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/users",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer kz5m04gua5k4u433nyp5"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/users?email=test4@socitech.co",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "test4@socitech.co"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"long@socitech.co\",\n\t\"password\"  : \"qwer1234\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/token",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get token",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "",
+						"value": "",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"test2@socitech.co\",\n\t\"password\"  : \"qwer1234\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/token?tokenId=9mts0szqssx1sm3yiw43",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"token"
+					],
+					"query": [
+						{
+							"key": "tokenId",
+							"value": "9mts0szqssx1sm3yiw43"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Extend token",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"tokenId\" : \"9mts0szqssx1sm3yiw43\",\n\t\"extend\"  : true\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/token",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete token",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:3000/token?tokenId=9mts0szqssx1sm3yiw43",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"token"
+					],
+					"query": [
+						{
+							"key": "tokenId",
+							"value": "9mts0szqssx1sm3yiw43"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Menu",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 4kdtyr708whcqpqbl3bq"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "localhost:3000/menu?email=long@socitech.co",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"menu"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "long@socitech.co"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Shopping Cart",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer zgjrvc4o1jq0ccl4z9wl"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/javascript"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"long@socitech.co\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/cart",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Shopping Cart",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer zgjrvc4o1jq0ccl4z9wl"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/javascript"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"long@socitech.co\",\n\t\"cartData\" : [{\n\t    \"id\" : \"App-1\",\n\t    \"name\" : \"Russian Salad\",\n\t    \"price\" : 4.99\n\t  },{\n\t    \"id\" : \"Pre-1\",\n\t    \"name\" : \"Almond Citrus Seafood\",\n\t    \"price\" : 13.99\n\t  }]\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/cart",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cart"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Shopping Cart",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer zgjrvc4o1jq0ccl4z9wl"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/javascript"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"long@socitech.co\",\n\t\"cartData\" : [{\n\t    \"id\" : \"App-1\",\n\t    \"name\" : \"Russian Salad\",\n\t    \"price\" : 4.99\n\t  },{\n\t    \"id\" : \"Pre-1\",\n\t    \"name\" : \"Almond Citrus Seafood\",\n\t    \"price\" : 13.99\n\t  }]\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/cart?email=long@socitech.co",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cart"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "long@socitech.co"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stripe create charge",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer "
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "amount",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "currency",
+							"value": "usd",
+							"type": "text"
+						},
+						{
+							"key": "source",
+							"value": "tok_mastercard",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test description",
+							"type": "text"
+						},
+						{
+							"key": "capture",
+							"value": "true",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.stripe.com/v1/charges",
+					"protocol": "https",
+					"host": [
+						"api",
+						"stripe",
+						"com"
+					],
+					"path": [
+						"v1",
+						"charges"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Process Order",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer zgjrvc4o1jq0ccl4z9wl"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\" : \"long@socitech.co\"\n}"
+				},
+				"url": {
+					"raw": "localhost:3000/orders",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
