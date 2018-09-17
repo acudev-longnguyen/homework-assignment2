@@ -1,0 +1,62 @@
+[
+  {
+    "id" : "App-1",
+    "name" : "Russian Salad",
+    "price" : 4.99
+  },
+  {
+    "id" : "App-2",
+    "name" : "Garlic bread",
+    "price" : 3.99
+  },
+  {
+    "id" : "Pre-1",
+    "name" : "Almond Citrus Seafood",
+    "price" : 13.99
+  },
+  {
+    "id" : "Pre-2",
+    "name" : "Seafood Supreme",
+    "price" : 13.99
+  },
+  {
+    "id" : "Pre-3",
+    "name" : "Meat Lovers",
+    "price" : 13.99
+  },
+  {
+    "id" : "Std-1",
+    "name" : "Teriyaki Chicken",
+    "price" : 9.99
+  },
+  {
+    "id" : "Std-2",
+    "name" : "Pepperoni",
+    "price" : 9.99
+  },
+  {
+    "id" : "Std-3",
+    "name" : "Cheesy Chicken Bacon",
+    "price" : 9.99 
+  },
+  {
+    "id" : "opt-1",
+    "name" : "Cheese crust",
+    "price" : 3.99
+  },
+  {
+    "id" : "opt-2",
+    "name" : "vegan",
+    "price" : 0
+  },
+  {
+    "id" : "drk-1",
+    "name" : "Soft drinks",
+    "price" : 3.99
+  },
+  {
+    "id" : "drk-2",
+    "name" : "Bottled Water",
+    "price" : 2.99
+  } 
+]
