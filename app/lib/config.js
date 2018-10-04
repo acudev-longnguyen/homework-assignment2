@@ -18,12 +18,12 @@ config.environments = {
     'stripe' : {
       'hostUrl' : 'api.stripe.com',
       'chargePath' : '/v1/charges',
-      'apiKey' : 'sk_test_*******************'  
+      'apiKey' : 'sk_test_4E44i1TcWS9jN7qcVY7GymXi'  
     },
     'mailgun' : {
       'hostUrl' : 'api.mailgun.net',
-      'domain' : 'sandbox***********************.mailgun.org',
-      'apiKey' : '*************************************'
+      'domain' : 'sandbox0c5b8975b50a491b8a8cf14004871dee.mailgun.org',
+      'apiKey' : '60f493d2a012e7f036839c7f282b40e5-0e6e8cad-5cc5f78d'
     }
   },
   // Production environent
@@ -35,12 +35,12 @@ config.environments = {
     'stripe' : {
       'hostUrl' : 'api.stripe.com',
       'chargePath' : '/v1/charges',
-      'apiKey' : 'sk_test_********************'  
+      'apiKey' : 'sk_test_4E44i1TcWS9jN7qcVY7GymXi'  
     },
     'mailgun' : {
       'hostUrl' : 'api.mailgun.net',
-      'domain' : 'sandbox***********************.mailgun.org',
-      'apiKey' : '*************************************'
+      'domain' : 'sandbox0c5b8975b50a491b8a8cf14004871dee.mailgun.org',
+      'apiKey' : '60f493d2a012e7f036839c7f282b40e5-0e6e8cad-5cc5f78d'
     }
   }
 };

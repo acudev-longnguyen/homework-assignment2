@@ -62,6 +62,9 @@ tokenHandlers._tokens.post = async (data) => {
     // Store the token
     await _data.create('tokens', tokenId, tokenObject);
 
+    // create shopping cart associated with this token
+    await _data.create('shoppingcart', tokenId, []);
+
     return new Response(200, tokenObject);
   } else {
     return new Response(400, {'Error' : 'Missing required fields'});
@@ -153,7 +156,7 @@ tokenHandlers._tokens.delete = async (data) => {
  */
 tokenHandlers.verifyToken = async (tokenId, email) => {
   const tokenData = await _data.read('tokens', tokenId);
-  
+
   if (tokenData && tokenData.email == email && tokenData.expires > Date.now()) {
     return true;
   } else {

@@ -35,6 +35,7 @@ server.httpsServer = https.createServer(server.httpsServerOptions, (req, res) =>
 
 // Handle server logic for http and https server
 server.handleRequest = (req, res) => {
+  console.log('request hit');
   // parse url
   const parsedUrl = url.parse(req.url, true);
 
@@ -89,6 +90,8 @@ server.handleRequest = (req, res) => {
       'payload' : helpers.parseJSONObject(buffer)
     };
 
+    console.log(data);
+
     chosenHandler(data).then( response => {
       if (response.statusCode == 200) {
         debug(config.colorCode.Green, data.method.toUpperCase() + ' /' + trimmedPath + ' ' + response.statusCode);
@@ -98,6 +101,9 @@ server.handleRequest = (req, res) => {
 
       res.setHeader('Content-Type', 'application/json');
       res.writeHead(response.statusCode);
+
+      console.log(response.payloadToString());
+
       res.end(response.payloadToString());
     }).catch( err => {
       res.setHeader('Content-Type', 'application/json');
