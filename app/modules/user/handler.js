@@ -66,7 +66,8 @@ userHandlers._users.post = async (data) => {
     lastName,
     email,
     hashedPassword,
-    address
+    address,
+    timeCreated : Date.now()
   };
 
   // Write new user object to data source

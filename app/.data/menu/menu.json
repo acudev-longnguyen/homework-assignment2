@@ -40,22 +40,22 @@
     "price" : 9.99 
   },
   {
-    "id" : "opt-1",
+    "id" : "Opt-1",
     "name" : "Cheese crust",
     "price" : 3.99
   },
   {
-    "id" : "opt-2",
-    "name" : "vegan",
-    "price" : 0
+    "id" : "Opt-2",
+    "name" : "Vegetarian Toppings",
+    "price" : 1.99
   },
   {
-    "id" : "drk-1",
+    "id" : "Drk-1",
     "name" : "Soft drinks",
     "price" : 3.99
   },
   {
-    "id" : "drk-2",
+    "id" : "Drk-2",
     "name" : "Bottled Water",
     "price" : 2.99
   } 

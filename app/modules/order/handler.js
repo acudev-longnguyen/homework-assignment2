@@ -70,7 +70,8 @@ orderHandlers._orders.post = async (data) => {
     orderId,
     total,
     cart,
-    'status' : 'Pending'
+    'status' : 'Pending',
+    timeCreated : Date.now()
   };
 
   await _data.create('orders', orderId, orderContent);
